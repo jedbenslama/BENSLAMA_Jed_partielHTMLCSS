@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Bigelow+Rules&family=Oleo+Script:wght@400;700&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+html{
+    background-color: #6A3460;
+}
+body{
+    margin:0;
+}
+.topnav{
+    display:flex;
+    background-color: #6A3460;
+    width:100%;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+dl.topnavgauche{
+    margin:0;
+    padding:0 0 0 30px;
+    list-style-type:none;
+    justify-content: space-around;
+}
+dl.topnavdroit{
+    margin:0 0 0 auto;
+    list-style-type:none;
+}
+.svgelem{
+    margin:10px;
+}
+.main_container{
+    background-color: #6A3460;
+}
+.main_container img{
+    width:100%;
+}
+.textdansimage{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width:353px;
+}
+.main_container h3{
+    font-family: "Oleo Script";
+    color: white;
+    background-color: #6A3460;
+    display: inline-block;
+    font-size:30px;
+    font-weight: lighter;
+    padding:10px;
+    position:relative;
+    top:-50px;
+    left:-200px;
+}
+.accueil{
+    margin-top:-26px;
+    background-color:#E4DCE2;
+    text-align: center;
+    dl{
+        display:flex;
+        list-style-type:none;
+        justify-content: center;
+        
+    };
+    h2{
+        text-align:center;
+        font-family:'Open Sans';
+        font-weight: 100;
+        margin-bottom: 20px;
+    };
+
+}
+.elementdedl{
+    display: block;
+    text-align: center;
+    width: calc(100% / 4);
+    p{
+        font-size: 16px;
+        transition: 0.5s;
+    };
+    img{
+        margin:auto;
+        object-fit: cover;
+        width:80%;
+        aspect-ratio : 1 / 1;
+    };
+
+    
+}
+.elementdedl:hover{
+    display: block;
+    text-align: center;
+    width: calc(100% / 4);
+    background-color: #6A3460;
+    p{
+        font-size: 16px;
+        transition: 0.5s;
+    };
+    img{
+        margin:10px auto auto auto;
+        object-fit: cover;
+        width:80%;
+        aspect-ratio : 1 / 1;
+    };
+
+    
+}
+
+.divenbas{
+    margin:auto;
+    text-align: center;
+}
+.divenbas button{
+    font-size:50px;
+    background-color: #6A3460;
+    border: 10px;
+    border-color: white;
+}
+
+
+
+.botnav{
+    background-color: #6A3460;
+    display:flex;
+    justify-content: center;
+    width:100%;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    dl{
+        list-style-type:none;
+        justify-content: space-evenly;
+    };
+}
+
+footer{
+    background-image:url("images/holiday.jpeg");
+}
+
+
+.reddit{
+    max-height:32px; filter: invert(44%) sepia(86%) saturate(1260%) hue-rotate(160deg) brightness(93%) contrast(101%);
+}
+.twitter{
+    max-height:32px; filter: invert(44%) sepia(86%) saturate(1260%) hue-rotate(160deg) brightness(93%) contrast(101%);
+}
+.linkedin{
+    max-height:32px; filter: invert(44%) sepia(86%) saturate(1260%) hue-rotate(160deg) brightness(93%) contrast(101%);
+}
+.facebook{
+    max-height:32px; filter: invert(44%) sepia(86%) saturate(1260%) hue-rotate(160deg) brightness(93%) contrast(101%);
+}
+
+
+@media all and (max-width:768px){ /*tablette jcrois*/
+    .accueil dl{
+            display:block;
+    }
+    .elementdedl{
+        width: 100%;
+    }
+    .textdansimage{
+        position: static;
+        top: 0;
+        left: 0;
+        transform: translate(0,0);
+        min-width:353px;
+        text-align: center;
+        background-color: #6A3460;
+    }
+    .main_container h3{
+        font-family: "Oleo Script";
+        color: white;
+        background-color: #6A3460;
+        display: inline-block;
+        font-size:60px;
+        font-weight: lighter;
+        padding:10px auto 10px auto;
+        position:static;
+        margin:0;
+        top:0;
+        left:0px;
+    }
+}
+@media all and (max-width:425px){ /*telephone jcrois*/
+    
+}
